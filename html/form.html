@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form>
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" placeholder="Name" minlength="4" required><br>
+
+            <label for="pws">Password:</label>
+            <input type="password" id="pwd" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email"><br>
+
+            <label for="phone">Number:</label>
+            <input type="tel" id="phone" minlength="10" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+
+            <lable for="date">DOB:</lable>
+            <input type="date" id="date"><br>
+
+            <lable for="qnt">Quantity:</lable>
+            <input type="number" min="0" max="99" value="1"><br>
+
+            <label for="title">Prifix</label><br>
+            
+            <label for="Dr.">Dr.</label>
+            <input type="radio" id="Dr." name="prefix">
+
+            <label for="Er.">Er.</label>
+            <input type="radio" id="Er." name="prefix">
+            
+            <label for="La.">La.</label>
+            <input type="radio" id="La." name="prefix"><br>
+            
+            <lable for="payment">Payment:</lable>
+            <select id="payment">
+                <option value="Choose" hidden>Choose</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="gitcard">Giftcard</option>
+            </select><br>
+
+            <lable for="checkbox">Checkbox:</lable>
+            <input type="checkbox" id="checkbox"><br>
+
+            <label for="file">File:</label>
+            <input type="file" id="file" accept="image/png"><br>
+
+            <label for="comment">Review:</label>
+            <textarea id="comment"></textarea><br>
+
+
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>
